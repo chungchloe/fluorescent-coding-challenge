@@ -1,0 +1,90 @@
+/**********
+    GENERAL CSS
+**********/
+
+/**HTML Elements**/
+html { scroll-behavior: smooth; }
+body { font-family: 'IBM Plex Sans', sans-serif; }
+
+/**Display Settings**/
+#wrapper {
+    /*Display Settings*/
+    display: flex; flex-direction: row;
+    /*Spacing*/
+    margin: 40px;
+}
+
+/**Reusable Classes**/
+.separator {
+    display: block;
+    width: 100%; height: 1px;
+    background: #dfdfdf;
+}
+
+
+/**********
+    PRODUCT PAGE
+**********/
+
+/**Product Visual Section**/
+.product-visual { width: 63%; }
+.product-img-wrapper { position: relative; transition: all, 5.s; }
+/*Zoomm Icon*/
+.product-img-wrapper::after {
+    content: url("../images/zoom_in-24px\ 1.png");
+    display: block;
+    z-index: 1000;
+    width: 24px; height: auto; padding: 11px;
+    position: absolute; top: 20px; right: 20px;
+    background: #fff; border-radius: 100%;
+    box-shadow: 0 4px 6px rgba(0,0,0,.06);
+    opacity: 0; cursor: pointer;
+    transition: all, .5s;
+}
+.product-img-wrapper:hover::after { opacity: 1; }
+/*Product Image Settings*/
+.product-img { width: 100%; margin: 10px 0; }
+.product-img:first-child { margin-top: 0; }
+
+/**Product Details Section**/
+/*Spacing*/
+.product-details { margin: 80px 0 0 60px; }
+.product-size, .add-to-cart { margin: 40px 0 20px 0; }
+.product-colour { margin-top: 20px; }
+/*Product General Info*/
+.product-name { font-size: 24px; font-weight: 700; line-height: 32px; }
+.product-price { font-size: 14px; line-height: 24px; }
+/*Product Details H3*/
+.product-details h3 { font-size: 14px; font-weight: 700; line-height: 28px; }
+/*Product Size Buttons*/
+.product-size-button {
+    margin: 8px 8px 0 0; padding: 8px 16px;
+    height: 40px;
+    border-radius: 38px; border: none;
+    background: #f1f1f1;
+    font-size: 14px; line-height: 14px;
+    cursor: pointer;
+    transition: all, .5s;
+}
+.product-size-button:hover {
+    background: #1d1d1d;
+    color: #fff;
+}
+/*Product Colour Buttons*/
+.colour-button {
+    border: 1px solid #dedede; border-radius: 100%;
+    transition: all, .5s;
+}
+.colour-button:hover { border: 1px solid #1b1b1b; border-radius: 100%; }
+/*Add to Cart*/
+.add-to-cart {
+    width: 376px; height: 48px;
+    background: none;
+    border: 1px solid #dfdfdf; border-radius: 28px;
+    font-size: 14px; line-height: 24px; color: #1d1d1d;
+    cursor: pointer;
+    transition: all, .5s;
+}
+.add-to-cart:hover {
+    background: #000; color: #fff;
+}
