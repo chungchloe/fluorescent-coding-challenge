@@ -56,13 +56,15 @@
                 <!--Colour-->
                 <div class="product-colour">
                     <h3>Colour</h3>
-                    <img id="red-button" class="colour-button" src="images/Group 56.png" alt="Red colour button">
-                    <img id="green-button" class="colour-button" src="images/Group 57.png" alt="Green colour button">
-                    <img id="navy-button" class="colour-button" src="images/Group 58.png" alt="Navy colour button">
+                    <img id="red-button" class="colour-button" onclick="scrollToImg(this.id);" src="images/Group 56.png" alt="Red colour button">
+                    <img id="green-button" class="colour-button" onclick="scrollToImg(this.id);" src="images/Group 57.png" alt="Green colour button">
+                    <img id="navy-button" class="colour-button" onclick="scrollToImg(this.id);" src="images/Group 58.png" alt="Navy colour button">
                 </div>
 
                 <!--Add to Cart-->
-                <button class="add-to-cart">Add to Cart</button>
+                <div class="add-to-cart-wrapper">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
 
                 <!--JavaScript-->
                 <script src="js/custom.js"></script>
