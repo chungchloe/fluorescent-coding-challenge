@@ -24,11 +24,11 @@ for (var i=0; i<colourButtons; i++) {
 }*/
 
 
-function scrollToImg(myId) {
-    console.log(myId);
-    var myImgId = null;
+function scrollToImg(buttonId) {
+    //console.log(buttonId);
+    var productImgId = null;
     
-    switch (myId) {
+    /*switch (myId) {
         case "green-button" :
         myImgId = "green";
         break;
@@ -40,7 +40,9 @@ function scrollToImg(myId) {
         case "navy-button" :
         myImgId = "navy";
         break;
-    }
+    }*/
 
-    document.getElementById(myImgId).scrollIntoView();
+    productImgId = buttonId.substring(0, buttonId.indexOf('-'));
+    
+    document.getElementById(productImgId).scrollIntoView();
 }
