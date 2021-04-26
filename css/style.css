@@ -11,7 +11,7 @@ body { font-family: 'IBM Plex Sans', sans-serif; }
     /*Display Settings*/
     display: flex; flex-direction: row;
     /*Spacing*/
-    margin: 40px;
+    padding: 30px 40px;
 }
 
 /**Reusable Classes**/
@@ -28,7 +28,7 @@ body { font-family: 'IBM Plex Sans', sans-serif; }
 
 /**Product Visual Section**/
 .product-visual { width: 63%; }
-.product-img-wrapper { position: relative; transition: all, 5.s; }
+.product-img-wrapper { position: relative; padding: 10px 0; transition: all, 5.s; }
 /*Zoomm Icon*/
 .product-img-wrapper::after {
     content: url("../images/zoom_in-24px\ 1.png");
@@ -43,16 +43,16 @@ body { font-family: 'IBM Plex Sans', sans-serif; }
 }
 .product-img-wrapper:hover::after { opacity: 1; }
 /*Product Image Settings*/
-.product-img { width: 100%; margin: 10px 0; }
+.product-img { width: 100%; }
 .product-img:first-child { margin-top: 0; }
 
 /**Product Details Section**/
 /*Spacing*/
-.product-details { margin: 80px 0 0 60px; }
-.product-size, .add-to-cart { margin: 40px 0 20px 0; }
-.product-colour { margin-top: 20px; }
+.product-details { padding: 60px 0 0 60px; }
+.product-general-info, .product-size,
+.product-colour, .add-to-cart-wrapper { padding: 20px 0; }
 /*Product General Info*/
-.product-name { font-size: 24px; font-weight: 700; line-height: 32px; }
+.product-name { font-size: 24px; font-weight: 700; line-height: 32px; margin-bottom: 4px; }
 .product-price { font-size: 14px; line-height: 24px; }
 /*Product Details H3*/
 .product-details h3 { font-size: 14px; font-weight: 700; line-height: 28px; }
@@ -72,8 +72,10 @@ body { font-family: 'IBM Plex Sans', sans-serif; }
 }
 /*Product Colour Buttons*/
 .colour-button {
+    margin-top: 8px;
     border: 1px solid #dedede; border-radius: 100%;
     transition: all, .5s;
+    cursor: pointer;
 }
 .colour-button:hover { border: 1px solid #1b1b1b; border-radius: 100%; }
 /*Add to Cart*/
