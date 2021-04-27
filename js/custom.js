@@ -69,3 +69,10 @@ function scrollToImg(buttonId) {
 //5. Fifth Solution - Anchor tag
 //Benefits: Easy to write, accessible.
 //Limitations: Image ids cannot be changed.
+
+
+
+//Liquid
+/*{% if product.id[i] === colour.id[i] %}
+    product[i].scrollIntoView();
+{% endif %}*/
